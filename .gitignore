@@ -1,0 +1,5 @@
+# Private team rosters & match box score reports (kept in Google Drive, not public GitHub)
+teams_rosters.json
+*box-scores*.html
+*match-data*.json
+.DS_Store

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>B11 Donvale Dunkers 2 — Basketball Scoreboard &amp; Stat Tracker</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="dunkers_logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app-root"></div>
+
+  <!-- Guided Action Flow Wizard Modal (Select Player -> Select 2PT/3PT Zone -> Select Assist) -->
+  <div id="action-wizard-modal" class="modal-overlay hidden"></div>
+
+  <!-- Edit Play Modal (Modify Player, Modify Shot Zone, Modify Assist, or Remove Action) -->
+  <div id="edit-play-modal" class="modal-overlay hidden"></div>
+
+  <!-- Clock Adjust Modal (-1m, -10s, -1s, +1s, +10s, +1m, Direct MM:SS) -->
+  <div id="clock-adjust-modal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>⏱️ Adjust Game Clock</h3>
+        <button class="btn-close-x" onclick="window.closeClockAdjustModal()">✕</button>
+      </div>
+      <div id="clock-adjust-body"></div>
+    </div>
+  </div>
+
+  <!-- On the Court 5 Substitution Modal -->
+  <div id="sub-modal" class="modal-overlay hidden"></div>
+
+  <!-- Google Drive Storage Settings Modal -->
+  <div id="drive-settings-modal" class="modal-overlay hidden"></div>
+
+  <!-- 6-Second Undo / Restore Toast -->
+  <div id="undo-toast" class="undo-toast hidden"></div>
+
+  <!-- Application Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/courtZones.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/htmlExporter.js"></script>
+  <script src="js/googleDrive.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
