@@ -436,18 +436,19 @@ body {
   gap: 12px;
 }
 
-.btn-def-primary {
-  background: linear-gradient(180deg, #2563eb 0%, #1d4ed8 100%);
-  color: #ffffff;
-  min-height: 92px;
-  box-shadow: 0 3px 10px rgba(29, 78, 216, 0.28);
-}
-
+.btn-def-primary,
 .btn-def-foul {
   background: #f8fafc;
   color: #1e293b;
   border: 2.5px solid #94a3b8;
   min-height: 92px;
+  box-shadow: none;
+}
+
+.btn-def-primary:hover,
+.btn-def-foul:hover {
+  border-color: #64748b;
+  background: #f1f5f9;
 }
 
 /* On the Court 5 Bar */
